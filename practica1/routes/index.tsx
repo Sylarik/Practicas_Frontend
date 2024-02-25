@@ -5,12 +5,6 @@ type Frase = {
   frase: string;
 }
 
-//MATERIAL FOTOSENSIBLE
-//https://i.gifer.com/Un13.gif
-//https://usagif.com/wp-content/uploads/gifs/starfall-gif-20.gif
-//diamntes cayendo: https://i.makeagif.com/media/5-27-2017/KQ0C5M.gif
-//diamante girando: https://i.gifer.com/TlHZ.gif
-
 export const handler: Handlers = {
   GET: async (req: Request, ctx: FreshContext<unknown, Frase>) => {
       try{
@@ -42,7 +36,7 @@ export default function Home (props: PageProps<Frase>){
           <div class="centrar fila">
           <img  src="https://media.tenor.com/fVuQICSLxu8AAAAj/wolf-dancing-meme-dancing-wolf-meme.gif" alt="gif" style="width: 35%" />
 
-            <p> 
+            <p class="frases"> 
               {props.data}
             </p>
             <img  src="https://media.tenor.com/fVuQICSLxu8AAAAj/wolf-dancing-meme-dancing-wolf-meme.gif" alt="gif" style="width: 35%"/>
@@ -51,10 +45,13 @@ export default function Home (props: PageProps<Frase>){
           
 
           <div >
-            <img  class="prueba" src="https://i.gifer.com/6ICU.gif" alt="gif" />
-
+            <img  class="moverse-a-los-lados" src="https://i.gifer.com/6ICU.gif" alt="gif" />
           </div>
           
+          <div style="background-color: white" class="centrar palpitar sorteo">
+            <p> QUIERES PARTICIPAR EN EL SORTEO DE UN IPHONE 15 PRO NUEVECITO?</p>
+            <a  href="/rickroll"> PINCHA AQUI </a>
+          </div>
         
 
       </body>

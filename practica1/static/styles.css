@@ -199,7 +199,8 @@ div.es-un-body {
   align-items: center;
   flex-direction: column; /* Alinea verticalmente */
   
-  margin-top: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   
 }
 
@@ -231,14 +232,14 @@ h1{
 }
 
 
-p {
+p.frases {
   background-image: url("https://i.gifer.com/ZOHV.gif"), url("https://www.flores.ninja/wp-content/uploads/2017/05/Flores.jpg") ;
   background-position: top, cover;
   background-size: cover;
 
   padding: 10%;
   font-weight: 900;
-  color: rgb(9, 9, 224); /* Cambia el color del texto a azul */
+  color: rgb(0, 42, 255); /* Cambia el color del texto a azul */
   font-size: 30px;
   text-align: center;
   
@@ -263,3 +264,136 @@ h1.especial:active{
 }
 
 /*-------------------*/
+
+.moverse-a-los-lados {
+  position: relative;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-direction: alternate;  
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+  0%   { left:-400px; top:0px;}
+  100%  { left:400px; top:0px;}
+}
+
+.palpitar {
+  animation: palpitar 1s infinite;
+}
+
+@keyframes palpitar {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+
+body.rickroll {
+  background: url("https://www.icegif.com/wp-content/uploads/2023/01/icegif-162.gif");
+  background-color: #fabada;
+  background-size: cover;
+  background-position: cover;
+  background-repeat: no-repeat;
+  height: 100vh; 
+}
+
+.video {
+    width:"560";
+    height:"315";
+    src:"https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+}
+
+
+.btn-audio.is-active {
+  background-position: 0 0;
+}
+.btn-audio {
+  width: 40px;
+  height: 40px;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  background-size: 40px;
+}
+
+div.sorteo {
+  background: url("https://www.welnia.com/dw/image/v2/BFMX_PRD/on/demandware.static/-/Sites-b2c_cofares_es-Library/default/dw45dce360/welniahero1-completo-mobile-cuenta-atras/sorteo-3-iphone-15-pro.png");
+  background-position: cover;
+  background-size: cover;
+
+  padding: 5%;
+  font-weight: 900;
+  color: rgb(214, 43, 197); /* Cambia el color del texto a azul */
+  -webkit-text-stroke: 2px rgb(45, 26, 103);
+  font-size: 40px;
+  text-align: center;
+  
+  width: 50%;
+}
+
+p.hobbit {
+  font-family: 'Fantasy', 'Copperplate', 'Papyrus', 'Brush Script MT', cursive;
+  font-size: 12px;
+  transition: color 0.5s ease-in-out;
+}
+@keyframes cambioColor {
+  0% { color: blue; }
+  25% { color: red; }
+  50% { color: green; }
+  75% { color: yellow; }
+  100% { color: blue; }
+}
+p.hobbit:hover {
+  animation: cambioColor 3s infinite; /* Cambia el color durante 5 segundos y se repite infinitamente */
+}
+
+.videoMovil {
+  position: absolute; 
+  left: 40%;
+  right: 40%;
+  top: 5%;
+  bottom: 5%;
+  width: 20%; /* Ajusta el tamaño según sea necesario */
+  
+  animation: loco 2s infinite; /* Duración de la animación: 5 segundos, se repite infinitamente */
+  transition: transform 0.5s ease-in-out; 
+}
+
+@keyframes loco {
+  0%   { left: 400px; top: 0; transform: rotate(0deg); }
+  25%  { left: 400px; top: 0; transform: rotate(90deg); }
+  50%  { left: 400px; top: 400px; transform: rotate(180deg); }
+  75%  { left: 400px; top: 400px; transform: rotate(270deg); }
+  100% { left: 400px; top: 0; transform: rotate(360deg); }
+}
+
+.explosion1 {
+  position: absolute;
+  left: 70%; /* Coordenada X */
+  top: 200px; /* Coordenada Y */
+  width: 400px; /* Ancho de la imagen */
+  height: 500px; /* Altura de la imagen */
+}
+.explosion2 {
+  position: absolute;
+  left: 50px; /* Coordenada X */
+  top: 100px; /* Coordenada Y */
+  width: 200px; /* Ancho de la imagen */
+  height: 300px; /* Altura de la imagen */
+}
+.explosion3 {
+  position: absolute;
+  left: 20%; /* Coordenada X */
+  top: 70%; /* Coordenada Y */
+  width: 300px; /* Ancho de la imagen */
+  height: 400px; /* Altura de la imagen */
+}
+.explosion4 {
+  position: absolute;
+  left: 65%; /* Coordenada X */
+  top: 55%; /* Coordenada Y */
+  width: 200px; /* Ancho de la imagen */
+  height: 300px; /* Altura de la imagen */
+}
