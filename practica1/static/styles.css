@@ -1,0 +1,265 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+button {
+  color: inherit;
+}
+button, [role="button"] {
+  cursor: pointer;
+}
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
+}
+img,
+svg {
+  display: block;
+}
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.transition-colors {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.my-6 {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.my-4 {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.py-8 {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+.bg-\[\#86efac\] {
+  background-color: #86efac;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.py-6 {
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.py-1 {
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+}
+.border-gray-500 {
+  border-color: #6b7280;
+}
+.bg-white {
+  background-color: #fff;
+}
+.flex {
+  display: flex;
+}
+.gap-8 {
+  grid-gap: 2rem;
+  gap: 2rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.max-w-screen-md {
+  max-width: 768px;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.border-2 {
+  border-width: 2px;
+}
+.rounded {
+  border-radius: 0.25rem;
+}
+.hover\:bg-gray-200:hover {
+  background-color: #e5e7eb;
+}
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* MIO */
+
+body {
+  /*background-image: url("https://i.pinimg.com/originals/d0/5c/77/d05c77c423324c5b06f09fae67869373.jpg");*/
+  background: url("https://i.gifer.com/WiC5.gif"), url("https://usagif.com/wp-content/uploads/gifs/starfall-gif-20.gif") no-repeat center center fixed;
+  
+  background-position: top, cover;
+  background-size: cover;
+  background-repeat:  no-repeat;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.es-un-body {
+  background: url("https://i.gifer.com/WiC5.gif")center center fixed;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hello {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 70%;
+}
+
+.prueba{
+  padding: 10%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/**/
+.contenedor {
+  position: bottom;
+  width: 20%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.imagenMovil {
+  position: absolute;
+  left: 0;
+  top: 5%;
+  bottom: 5%;
+  width: 20%; /* Ajusta el tamaño según sea necesario */
+  transform: translateY(-10%);
+  animation: moverDerecha 3s linear infinite;
+}
+
+@keyframes moverDerecha {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: calc(100% - 100px); /* Ajusta el valor según el ancho de tu imagen */
+  }
+}
+/**/
+.centrar {
+  width: fit-content;
+  height: fit-content;
+ 
+  display: flex;
+  
+  align-items: center;
+  flex-direction: column; /* Alinea verticalmente */
+  
+  margin-top: 10%;
+  
+}
+
+.fila {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 5%;
+  margin-left: 50%;
+  margin-right: 50%;
+
+}
+
+h1{
+  background-image: url("https://i.gifer.com/2eSd.gif") ;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 10px 10px 3px rgba(0, 0, 0, 0.2); /* Sombra del texto */
+  background-color: #fabada;
+
+  margin-bottom: 5%;
+
+  border-radius: 10px;
+
+
+}
+
+
+p {
+  background-image: url("https://i.gifer.com/ZOHV.gif"), url("https://www.flores.ninja/wp-content/uploads/2017/05/Flores.jpg") ;
+  background-position: top, cover;
+  background-size: cover;
+
+  padding: 10%;
+  font-weight: 900;
+  color: rgb(9, 9, 224); /* Cambia el color del texto a azul */
+  font-size: 30px;
+  text-align: center;
+  
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+}
+p.italic {font-style: italic;}
+
+
+.rotar {
+  transition: transform 2s;
+}
+.rotar:hover {
+  transform: rotateX(360deg);
+}
+
+h1.especial:active{
+  background-color: #c8ff00;
+  background-color: url("");
+  color: #000000;
+  transform: translateY(4px);
+  content: "DIAMANTES PAL FREE";
+}
+
+/*-------------------*/
